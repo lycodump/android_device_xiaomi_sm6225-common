@@ -452,6 +452,10 @@ endif
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-infinity
 
+# Device-specific settings
+ PRODUCT_PACKAGES += \
+     XiaomiParts
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
