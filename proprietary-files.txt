@@ -22,12 +22,12 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 
 # Bluetooth
-vendor/lib64/btaudio_offload_if.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
+vendor/lib64/btaudio_offload_if.so
 vendor/lib64/lib_bt_aptx.so
 vendor/lib64/lib_bt_ble.so
 vendor/lib64/lib_bt_bundle.so
@@ -179,6 +179,7 @@ vendor/lib64/libsdmextension.so
 vendor/lib64/libsdmutils.so
 vendor/lib64/libtinyxml.so
 vendor/lib64/libtinyxml2_1.so
+vendor/lib64/qti.video.utils.videobufferlayout.so
 vendor/lib64/vendor.display.color@1.0.so
 vendor/lib64/vendor.display.color@1.1.so
 vendor/lib64/vendor.display.color@1.2.so
@@ -187,7 +188,6 @@ vendor/lib64/vendor.display.color@1.4.so
 vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
-vendor/lib64/qti.video.utils.videobufferlayout.so
 
 # Displayfeature
 vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
@@ -379,9 +379,9 @@ system_ext/lib64/libmmosal.so
 system_ext/lib64/libmmparser_lite.so
 system_ext/lib64/libmmrtpdecoder.so
 system_ext/lib64/libmmrtpencoder.so
-vendor/bin/init.qti.media.sh
 vendor/bin/hw/vendor.qti.media.c2@1.0-service
 vendor/bin/hw/vendor.qti.media.c2audio@1.0-service
+vendor/bin/init.qti.media.sh
 vendor/etc/init/init.qti.media.rc
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
 vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc
@@ -508,13 +508,13 @@ vendor/etc/public.libraries.txt
 # QCC
 system_ext/app/QCC/QCC.apk
 system_ext/bin/qccsyshal@1.2-service
-system_ext/etc/permissions/com.qti.qcc.vendor_qcc.xml
 system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc
+system_ext/etc/permissions/com.qti.qcc.vendor_qcc.xml
 system_ext/lib64/libqcc.so
-system_ext/lib64/libqccdme.so
-system_ext/lib64/libqccfileservice.so
 system_ext/lib64/libqcc_file_agent_sys.so
 system_ext/lib64/libqcc_netstats.so
+system_ext/lib64/libqccdme.so
+system_ext/lib64/libqccfileservice.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.1.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so
@@ -634,10 +634,10 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 # USB
 vendor/bin/hw/android.hardware.usb@1.2-service-qti
 vendor/bin/init.qcom.usb.sh
-vendor/etc/init/android.hardware.usb@1.2-service-qti.rc
 vendor/etc/init/hw/init.qcom.usb.rc
-vendor/etc/usb_compositions.conf
+vendor/etc/init/android.hardware.usb@1.2-service-qti.rc
 vendor/etc/vintf/manifest/android.hardware.usb@1.2-service.xml
+vendor/etc/usb_compositions.conf
 
 # UWB
 vendor/lib64/libstreamparser.so
