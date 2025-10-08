@@ -192,6 +192,10 @@ on boot
 	chown system system /sys/class/touch/touch_dev/palm_sensor
 	chmod 0664 /sys/class/touch/touch_dev/palm_sensor
 
+# Enable modernized tap to wake
+ write /sys/devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a88000.i2c/i2c-1/1-0038/fts_gesture_mode 1
+
+
 #USB controller configuration
     setprop vendor.usb.rndis.func.name "gsi"
     setprop vendor.usb.rmnet.func.name "gsi"
