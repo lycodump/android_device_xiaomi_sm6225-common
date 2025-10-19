@@ -450,7 +450,7 @@ endif
 
 # Overlays Lineage
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-infinity
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
