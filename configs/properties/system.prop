@@ -58,6 +58,9 @@ ro.nfc.port=I2C
 # NTP
 persist.backup.ntpServer="0.pool.ntp.org"
 
+# Pre-Rendering
+persist.sys.default_scaling_gov=true
+
 # SdCardFS
 persist.sys.fuse.passthrough.enable=true
 
