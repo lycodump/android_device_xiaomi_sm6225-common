@@ -59,6 +59,7 @@ ro.nfc.port=I2C
 persist.backup.ntpServer="0.pool.ntp.org"
 
 # Pre-Rendering
+ro.vendor.perf.scroll_opt=true
 persist.sys.default_scaling_gov=true
 
 # SdCardFS
