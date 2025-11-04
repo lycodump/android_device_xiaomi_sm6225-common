@@ -94,6 +94,11 @@ BOARD_KERNEL_CMDLINE := \
     rcu_nocbs=all \
     rcutree.enable_rcu_lazy=1
 
+# Global LTO
+TARGET_GLOBAL_LTO := thin
+TARGET_GLOBAL_OPTIMIZATION := O3
+TARGET_GLOBAL_THINLTO := true
+
 # Kernel prebuilt
 TARGET_KERNEL_ARCH := arm64
 INLINE_KERNEL_BUILDING := true
