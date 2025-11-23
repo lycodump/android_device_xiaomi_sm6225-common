@@ -10,9 +10,6 @@ persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 persist.vendor.ims.no_stapa=1
 
-# NFC
-ro.vendor.se.type=HCE,UICC
-
 # Radio
 DEVICE_PROVISIONED=1
 persist.radio.multisim.config=dsds
