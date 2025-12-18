@@ -10,6 +10,9 @@ persist.sys.brightness.low.gamma=true
 # Camera
  persist.sys.cam.skip_detach_image=true
 
+# Charger
+ro.charger.enable_suspend=1
+
 # CNE
 persist.vendor.cne.feature=1
 
