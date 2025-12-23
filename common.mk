@@ -263,6 +263,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti \
     android.hardware.health-service.qti_recovery \
+    android.hardware.health-V1-ndk.vendor \
     android.hardware.health@2.1.vendor
 
 # HIDL
