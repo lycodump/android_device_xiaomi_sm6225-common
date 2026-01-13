@@ -79,7 +79,11 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libbase_shim.so'),
 
     'vendor/lib64/libwvhidl.so': blob_fixup()
-        .add_needed('libcrypto_shim.so')
+        .add_needed('libcrypto_shim.so'),
+
+    'system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so': blob_fixup()
+        .replace_needed('libprotobuf-cpp-full.so', 'libprotobuf-cpp-full-21.7.so'),
+
 }
 
 module = ExtractUtilsModule(
